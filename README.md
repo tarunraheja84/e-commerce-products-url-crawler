@@ -33,7 +33,6 @@ The crawler can be extended to more domains by modifying the configuration file.
 4. **Filter by Domain & Pattern:** Retains only links that match the target domain and known product path patterns.
 5. **Save Output:** Saves all matched product URLs to a structured `output.json` file grouped by domain.
 
----
 
 ## 🧰 Features
 
@@ -43,7 +42,6 @@ The crawler can be extended to more domains by modifying the configuration file.
 - ✅ Duplicate URL prevention using a visited set
 - ✅ Output in JSON format for easy integration or analysis
 
----
 
 ## 🗂️ Project Structure
 
@@ -69,13 +67,17 @@ git clone https://github.com/your-username/ecommerce-url-crawler.git
 cd ecommerce-url-crawler
 ```
 
+2. **Install playright**
+```
+playwright install
+```
+
 2. **Install dependencies**
 ```
 pip install -r requirements.txt
-```
 
 
-3. **Run the crawler**
+4. **Run the crawler**
 ```
 python app.py
 ```
