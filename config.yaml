@@ -3,10 +3,6 @@ start_urls:
     - https://www.tatacliq.com/
     - https://nykaafashion.com/
     - https://www.westside.com/
-    - https://www.myntra.com/
-    - https://www.flipkart.com/
-    - https://www.amazon.in/
-    - https://www.ajio.com/
 
 patterns:
   - products
