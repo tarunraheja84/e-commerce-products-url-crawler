@@ -4,7 +4,6 @@
 
 This project implements an **asynchronous web crawler** that discovers and collects **product URLs** from various **e-commerce websites**. It is designed to be scalable, efficient, and capable of handling different website structures.
 
----
 
 ## 🎯 Objective
 
@@ -13,7 +12,6 @@ To create a web crawler that:
 - Handles variations in URL patterns like `/product/`, `/item/`, `/p/`, or even regex-based patterns.
 - Is efficient, robust, and scalable to work on hundreds of websites.
 
----
 
 ## 🌐 Supported Domains
 
@@ -26,7 +24,6 @@ The following e-commerce domains are supported as a minimum:
 
 The crawler can be extended to more domains by modifying the configuration file.
 
----
 
 ## ⚙️ How It Works
 
@@ -62,36 +59,23 @@ The crawler can be extended to more domains by modifying the configuration file.
 ├── output.json               # Output file with matched product URLs
 ├── requirements.txt          # Project dependencies
 └── README.md                 # Project documentation
-
 ```
 
-## 🧪 How It Works (Approach)
 
-Load Config: Reads the list of starting URLs, patterns to match, and concurrency settings from config.yaml.
-
-**Start Crawling**: Begins crawling each start URL using an asynchronous queue.
-
-**Parse HTML**: Uses BeautifulSoup to extract all <a> and <link> tags.
-
-**Filter Links**: Checks if a link is in the same domain and matches known product patterns.
-
-**Save Output**: Outputs all matched URLs, grouped by domain, into output.json.
-
-
-🚀 How to Run
-1. # Clone the repository
+## 🚀 How to Run
+1. **Clone the repository**
 ```
 git clone https://github.com/your-username/ecommerce-url-crawler.git
 cd ecommerce-url-crawler
 ```
 
-2. # Install dependencies
+2. **Install dependencies**
 ```
 pip install -r requirements.txt
 ```
 
 
-3. # Run the crawler
+3. **Run the crawler**
 ```
 python app.py
 ```
