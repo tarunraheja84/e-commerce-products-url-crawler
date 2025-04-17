@@ -70,13 +70,14 @@ cd ecommerce-url-crawler
 2. **Install playright**
 ```
 playwright install
+
 ```
 
-2. **Install dependencies**
+3. **Install dependencies**
 ```
 pip install -r requirements.txt
 
-
+```
 4. **Run the crawler**
 ```
 python app.py
